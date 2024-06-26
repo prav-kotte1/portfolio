@@ -1,0 +1,25 @@
+.bubble {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Circular shape */
+    pointer-events: none; /* Prevent bubble from intercepting mouse events */
+    animation: floatBubble 15s infinite ease-in-out; /* Floating animation */
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+  
+  @keyframes floatBubble {
+    0% {
+      transform: translate(-50%, -50%) translateY(0);
+    }
+    50% {
+      transform: translate(-50%, -50%) translateY(-100px);
+    }
+    100% {
+      transform: translate(-50%, -50%) translateY(0);
+    }
+  }
+  
