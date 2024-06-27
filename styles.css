@@ -5,7 +5,7 @@
     height: 50px;
     border-radius: 50%; /* Circular shape */
     pointer-events: none; /* Prevent bubble from intercepting mouse events */
-    animation: floatBubble 15s infinite ease-in-out; /* Floating animation */
+    animation: floatBubble 15s infinite ease-in-out; /* Floating avunu animation */
     top: 0;
     left: 0;
     transform: translate(-50%, -50%);
