@@ -103,6 +103,7 @@ section{
     padding: 5rem 9% 5rem;
 }
 
+/* home page */
 .home{
     display: flex;
     justify-content: center;
@@ -121,7 +122,7 @@ span{
     color: #E2E2B6;
 }
 
-.home-content h3{
+.home-content h3:hover{
     font-size: 4rem;
     margin-bottom: 1rem;
     font-weight: 700;
@@ -260,4 +261,205 @@ span{
         width: 70vw;
         margin-top: 4rem;
     }
+}
+
+/* skills section */
+/* Centered Skills Section */
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full viewport height */
+    padding: 5rem 2rem;
+    background-color: #021526;
+    color: white;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #E2E2B6;
+    margin-bottom: 3rem;
+}
+
+.skills-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures it wraps on smaller screens */
+    max-width: 1000px;
+    width: 100%;
+}
+
+.skill-category {
+    flex: 1 1 30%; /* Makes each skill category occupy 30% of the row */
+    max-width: 300px;
+    padding: 2rem;
+    background-color: #01203A;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+}
+
+.skill-category h3 {
+    font-size: 2.4rem;
+    color: #E2E2B6;
+    margin-bottom: 1.5rem;
+}
+
+.skill-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 3rem;
+    color: #E2E2B6;
+}
+
+.skill-icons i:hover {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-category {
+        width: 100%;
+        max-width: 90%;
+    }
+}
+
+
+/* Experience Section */
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full viewport height */
+    padding: 5rem 2rem;
+    background-color: #021526;
+    color: white;
+    text-align: center;
+}
+
+.experience h2 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #E2E2B6;
+    margin-bottom: 3rem;
+}
+
+.experience-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    color: #b3c2cf;
+    line-height: 1.6;
+}
+
+.experience-content p {
+    margin-bottom: 2rem;
+}
+
+.experience-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Adding Animation on Hover for Experience Text */
+.experience-content p:hover {
+    color: #E2E2B6;
+    transition: color 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .experience h2 {
+        font-size: 3rem;
+    }
+
+    .experience-content {
+        font-size: 1.6rem;
+    }
+}
+
+/* Contact Section */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full viewport height */
+    padding: 5rem 2rem;
+    background-color: #021526;
+    color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #E2E2B6;
+    margin-bottom: 2rem;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+.contact-container p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    color: #E2E2B6;
+}
+
+.contact-container .btn {
+    display: inline-block;
+    padding: 1.2rem 3rem;
+    background-color: #E2E2B6;
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    color: #021526;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    margin-bottom: 3rem;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-container .btn:hover {
+    background-color: #E2E2B6;
+    transform: translateY(-5px);
+}
+
+.social-icons {
+    display: flex;
+    gap: 2rem;
+}
+
+.social-icons a {
+    color: #E2E2B6;
+    font-size: 2.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #021526;
+    transform: scale(1.2);
 }
