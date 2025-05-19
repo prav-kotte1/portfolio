@@ -1,13 +1,21 @@
-import NavBar from "./components/NavBar";
-import Hero from "./sections/Hero"
+import Footer from "./sections/Footer";
+import Contact from "./sections/Contact";
+import TechStack from "./sections/TechStack";
+// import Experience from "./sections/Experience";
+import Hero from "./sections/Hero";
 import ShowcaseSection from "./sections/ShowcaseSection";
+import Navbar from "./components/NavBar";
 
 const App = () => (
   <>
-    <NavBar />
+    <Navbar />
     <Hero />
     <ShowcaseSection />
+    {/* <Experience /> */}
+    <TechStack />
+    <Contact />
+    <Footer />
   </>
 );
-/*http://localhost:5173/*/
-export default App
+
+export default App;

@@ -86,4 +86,4 @@ function ShowcaseSection() {
     );
 }
 
-export default ShowcaseSection
+export default ShowcaseSection;
